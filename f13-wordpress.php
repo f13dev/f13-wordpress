@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: F13 WordPress
+Plugin Name: F13 WP Plugin Shortcode
 Plugin URI: https://f13.dev/wordpress-plugins/wordpress-plugin-wordpress/
-Description: Include WordPress plugin information with simple shortcodes.
+Description: WordPress plugin information shortcodes.
 Version: 1.0.0
 Author: Jim Valentine
 Author URI: https://f13.dev
