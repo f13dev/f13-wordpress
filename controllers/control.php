@@ -47,7 +47,7 @@ class Control
         $return = $v->plugin();
 
         set_transient($cache_key, $return, $cache);
-        
+
         $return .= '<script>console.log("Building WordPress plugin shortcode from API, setting transient: '.$cache_key.'");</script>';
 
         return $return;

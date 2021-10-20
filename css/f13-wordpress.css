@@ -17,6 +17,7 @@
 .f13-wordpress-requirements { padding: 10px; border: 1px solid #ccc; background: #fff; }
 .f13-wordpress-requirements:hover { border: 1px solid #222; }
 .f13-wordpress-hr { margin: 10px -10px; border-top: 1px solid #ccc; }
+.f13-wordpress-error { padding: 5px; margin: 10px 0px; background-color: #ffcccc; border: 1px solid #222; text-align: center; }
 .f13-wordpress-requirements summary { cursor: pointer; padding: 10px; margin: -10px; text-align: center; }
 .f13-wordpress-requirements summary a { pointer-events: none; }
 .f13-wordpress-requirements summary:after { content: '\021B4'; float: right; }

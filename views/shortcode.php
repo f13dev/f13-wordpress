@@ -32,6 +32,7 @@ class Shortcode
         $this->label_description            = __('Description', 'f13-wordpress');
         $this->label_download_version       = __('Download version %s', 'f13-wordpress');
         $this->label_downloads              = __('Downloads', 'f13-wordpress');
+        $this->label_error                  = __('Error', 'f13-wordpress');
         $this->label_last_updated           = __('Last updated', 'f13-wordpress');
         $this->label_on_wordpress           = __('%s on WordPress', 'f13-wordpress');
         $this->label_php_version            = __('Requires PHP', 'f13-wordpress');
@@ -66,6 +67,9 @@ class Shortcode
 
     public function plugin()
     {
+        if (property_exists($this->data, 'error')) {
+            return '<div class="f13-wordpress-error">'.$this->label_error.': '.htmlentities($this->data->error).'</div>';
+        }
         $v = '<div class="f13-wordpress-container">';
             $v .= '<div class="f13-wordpress-header">';
                 $v .= '<span class="dashicons dashicons-wordpress"></span>';
@@ -132,7 +136,6 @@ class Shortcode
                         $v .= '<span class="f13-wordpress-requirement">';
                             $v .= '<strong>'.$this->label_last_updated.':</strong>'.date('F j, Y g:ia', strtotime($this->data->last_updated));
                         $v .= '</span>';
-
                     $v .= '</div>';
                 $v .= '</details>';
             $v .= '</div>';
