@@ -1,0 +1,29 @@
+.f13-wordpress-container { border: 1px solid #ccc; background: #f6f6f6; padding-bottom: 10px; margin-bottom: 10px; }
+.f13-wordpress-container strong { margin-right: 10px; }
+.f13-wordpress-header { background: #0073aa; color: #fff; border-bottom: 1px solid #ccc; padding: 10px; font-size: 1.4em; margin: -1px -1px 0; }
+.f13-wordpress-header .f13-wordpress-slug { color: #fff; text-decoration: none; }
+.f13-wordpress-header .f13-wordpress-slug:hover { color: #fff; text-decoration: underline; }
+.f13-wordpress-header .dashicons { font-size: 1.4em; margin-right: 25px; }
+.f13-wordpress-title { padding: 10px; position:absolute; bottom: 0px; right: 0px; color: #fff; font-size: 1.2em; }
+.f13-wordpress-description { padding: 10px 10px 0px; }
+.f13-wordpress-rating span { color: #a1b500; }
+.f13-wordpress-description p { display: inline; }
+.f13-wordpress-links { text-align:center; }
+.f13-wordpress-links .f13-wordpress-button { padding: 10px; margin: 10px 0; border: 1px solid #ccc; white-space: nowrap; display:block; background: #fff; text-align: center; text-decoration: none; }
+.f13-wordpress-links .f13-wordpress-button:hover { border: 1px solid #222; text-decoration: none; }
+.f13-wordpress-rating, .f13-wordpress-excerpt, .f13-wordpress-download, .f13-wordpress-requirements, .f13-wordpress-tags { margin-top: 10px; }
+.f13-wordpress-tag { padding: 10px; margin: 10px 10px 0 0; border: 1px solid #ccc; background: #fff; display: inline-block; }
+.f13-wordpress-requirement { display: block; padding: 0 15px; box-sizing: border-box; width: 100%; }
+.f13-wordpress-requirements { padding: 10px; border: 1px solid #ccc; background: #fff; }
+.f13-wordpress-requirements:hover { border: 1px solid #222; }
+.f13-wordpress-hr { margin: 10px -10px; border-top: 1px solid #ccc; }
+.f13-wordpress-requirements summary { cursor: pointer; padding: 10px; margin: -10px; text-align: center; }
+.f13-wordpress-requirements summary a { pointer-events: none; }
+.f13-wordpress-requirements summary:after { content: '\021B4'; float: right; }
+.f13-wordpress-requirements[open] summary:after { content: '\021B5'; }
+.f13-wordpress-requirements > div { border: 1px solid #ccc; padding: 10px; background: #f6f6f6; margin-top: 10px; }
+.f13-wordpress-requirements[open] summary ~ * { animation: sweep .5s ease-in-out; }
+@keyframes sweep {
+    0% {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+}
