@@ -95,7 +95,7 @@ class Shortcode
                 $v .= '</div>';
                 $v .= '<div class="f13-wordpress-excerpt">';
                     $v .= '<strong>'.$this->label_description.':</strong>';
-                    $v .= substr($this->data->sections['description'], 0, 200).'...';
+                    $v .= substr($this->data->sections->description, 0, 200).'...';
                 $v .= '</div>';
                 $v .= '<div class="f13-wordpress-tags">';
                     $v .= '<strong>'.$this->label_tags.':</strong>';

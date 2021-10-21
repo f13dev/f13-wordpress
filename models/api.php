@@ -11,14 +11,10 @@ class Api
 
     public function _call($endpoint)
     {
-        $c = curl_init();
-        curl_setopt($c, CURLOPT_URL, $endpoint);
-        curl_setopt($c, CURLOPT_HTTPGET, true);
-        curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
-        $result = json_decode(curl_exec($c), true);
-        curl_close($c);
-
-        return (object) $result;
+        $response = wp_remote_get($endpoint);
+        $body     = wp_remote_retrieve_body( $response );
+        
+        return (object) json_decode($body);
     }
 
     public function select_plugin($slug)

@@ -26,8 +26,9 @@ class Control
         $cache_key = 'f13_wordpress'.sha1(F13_WORDPRESS['Version'].'-'.$slug.'-'.$cache);
         $transient = get_transient( $cache_key );
         if ( $transient ) {
-            echo '<script>console.log("Building WordPress plugin shortcode from transient: '.$cache_key.'");</script>';
-            return $transient;
+            $return = $transient;
+            $return .= '<script>console.log("Building WordPress plugin shortcode from transient: '.$cache_key.'");</script>';
+            return $return;
         }
 
         $m = new \F13\WordPress\Models\Api();
